@@ -108,6 +108,24 @@ function checkDigit() {
   }, 2000);
 }
 
+document.getElementById("displayOne").addEventListener("focus", function () {
+  if (this.value === "?") {
+    this.value = "";
+  }
+});
+
+document.getElementById("displayTwo").addEventListener("focus", function () {
+  if (this.value === "?") {
+    this.value = "";
+  }
+});
+
+document.getElementById("wynikElement").addEventListener("focus", function () {
+  if (this.value === "?") {
+    this.value = "";
+  }
+});
+
 buttonOne.addEventListener("click", function () {
   randomOne();
   obliczWynik();
