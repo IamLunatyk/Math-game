@@ -8,7 +8,7 @@ body {
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-image: url("/images/cloud-wide.png");
+  background-image: url("images/cloud-wide.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ input:hover {
 
 @media screen and (max-width: 414px) {
   body {
-    background-image: url("/images/cloud-main.png"); /* Ścieżka do obrazu */
+    background-image: url("images/cloud-main.png"); /* Ścieżka do obrazu */
     background-repeat: no-repeat;
     background-size: 400vh;
     animation: slideleft 60s infinite linear;
