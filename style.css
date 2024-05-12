@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+  min-height: 100vh;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url("/images/cloud-wide.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slideleft 60s infinite linear;
+}
+
+h1 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+  color: rgb(255, 102, 140);
+  font-size: 4rem;
+}
+.square {
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+  font-family: "Poetsen One", sans-serif;
+  display: flex;
+  border: 1px solid;
+
+  height: 100px;
+  width: 100px;
+  font-size: 80px;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.inputSquareSmall {
+  margin: 15px;
+  display: flex;
+  border: 1px solid;
+
+  height: 70px;
+  width: 70px;
+  font-size: 80px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.inputSquare {
+  display: flex;
+  border: 1px solid;
+  border-color: black;
+  height: 100px;
+  width: 100px;
+  font-size: 80px;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.squareSmall {
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+  margin: 15px;
+  display: flex;
+  border: none;
+  border-color: black;
+  height: 70px;
+  width: 70px;
+  font-size: 80px;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.wynik {
+  width: 190px;
+}
+
+input,
+div {
+  color: rgb(255, 102, 140);
+  border-radius: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: "Poetsen One", sans-serif;
+  display: inline-block;
+  background-color: rgb(255, 102, 140);
+  border-radius: 360px;
+  color: white;
+  place-items: center;
+  height: 50px;
+  width: 150px;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+input:hover {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+#main {
+  height: 100vh;
+  width: 40rem;
+}
+
+#answer {
+  display: block;
+  border: none;
+  width: 400px;
+  height: 100px;
+  font-size: 80px;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+}
+#answerMid {
+  display: inline-block;
+  align-items: center;
+}
+
+#counter-section {
+  font-size: 50px;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+}
+
+#counterLeft {
+  margin-left: 60px;
+  margin-right: 20px;
+  display: inline;
+}
+#counterRight {
+  margin-right: 70px;
+  display: inline;
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    background-image: url("/images/cloud-main.png"); /* Ścieżka do obrazu */
+    background-repeat: no-repeat;
+    background-size: 400vh;
+    animation: slideleft 60s infinite linear;
+  }
+  #main {
+    margin-top: 250px;
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    background-position: 0 40%;
+  }
+  50% {
+    background-position: 50% 40%; /* 150 = 300/2*/
+  }
+  100% {
+    background-position: 0 40%;
+  }
+}
