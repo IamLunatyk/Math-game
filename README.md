@@ -19,3 +19,5 @@ Instant feedback on correctness of answers.
 Points system to track progress and performance.
 Purpose:
 The primary goal of this application is to provide an enjoyable learning experience for children while reinforcing their mathematical skills. By presenting math problems in the form of a game, the application aims to make learning arithmetic operations more engaging and accessible.
+
+Try by yourself: https://iamlunatyk.github.io/Math-game/
